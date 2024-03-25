@@ -43,7 +43,7 @@ class _NavigationLearnState extends State<NavigationLearn> with NavigationManage
           );
         },
       ),
-      floatingActionButton: FloatingActionButton(child: const Icon(Icons.add), onPressed: () async {}),
+      floatingActionButton: FloatingActionButton(child: const Icon(Icons.add_alarm), onPressed: () async {}),
     );
   }
 }
