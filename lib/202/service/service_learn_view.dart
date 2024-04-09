@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:music_box/202/service/comments_learn_view.dart';
 import 'package:music_box/202/service/post_model.dart';
 import 'package:music_box/202/service/post_service.dart';
 
@@ -17,7 +18,8 @@ class _ServiceLearnState extends State<ServiceLearn> {
   late final Dio _dio;
   final _baseUrl = 'https://jsonplaceholder.typicode.com/';
 
-  late final PostService _postService;
+//test edilebilir kod. Interface olduğu için.
+  late final IPostService _postService;
   @override
   void initState() {
     super.initState();
@@ -87,6 +89,11 @@ class _PosCard extends StatelessWidget {
     return Card(
       margin: const EdgeInsets.only(bottom: 20),
       child: ListTile(
+        onTap: () {
+          Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) => CommentsLearnView(postId: _model?.id),
+          ));
+        },
         title: Text(_model?.title ?? ''),
         subtitle: Text(_model?.body ?? ''),
       ),

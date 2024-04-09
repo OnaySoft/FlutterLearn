@@ -5,7 +5,7 @@ import 'package:music_box/101/navigation_learn.dart';
 import 'package:music_box/202/model_learn.dart';
 import 'package:music_box/202/model_learn_view.dart';
 import 'package:music_box/202/service/service_learn_view.dart';
-import 'package:music_box/202/service/service_post_learn_view.dart';
+import 'package:music_box/202/service/service_post_get_learn_view.dart';
 import 'package:music_box/202/tab_learn.dart';
 import 'package:music_box/demos/color_life_cycle_view.dart';
 import 'package:music_box/demos/my_collections_demos.dart';
